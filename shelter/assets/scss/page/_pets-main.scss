@@ -1,0 +1,87 @@
+.pets-main {
+    background-color: $color-bacgroun-pets;
+    width: 100%;
+    max-width: 1280px;
+    height: 100%;
+    min-height: 1342px;
+    display: flex;
+    align-items: center;
+}
+
+.pets-header-page {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        letter-spacing: 0.06em;
+        width: 100%;
+        max-width: 400px;
+        height: 100%;
+        max-height: 90px;
+        margin: 0;
+}
+
+.pets-content-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 1162px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 903px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: $tablet-width) {
+    .pets-main {
+        height: 1733px;
+    }
+
+    .pets-content-page {
+        height: 1603px;
+    }
+
+    .cards-container {
+        width: 100%;
+        max-width: 580px;
+        height: 1365px;
+    }
+
+    .cards-disable {
+        display: none;
+    }
+}
+
+@media screen and (max-width: $mobile-small-width) {
+    .pets-main {
+        height: 1649px;
+    }
+
+    .pets-content-page {
+        width: 100%;
+        max-width: 300px;
+        height: 1565px;
+        margin: 0 auto;
+    }
+
+    .pets-header-page {
+        height: 100%;
+        max-height: 64px;
+    }
+
+    .cards-container {
+        width: 100%;
+        max-width: 270px;
+        height: 100%;
+        max-height: 1365px;
+    }
+
+    .cards-mobile {
+        display: none;
+    }
+}

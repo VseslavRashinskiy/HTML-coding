@@ -1,0 +1,37 @@
+.wrapper-global {
+    width: 100%;
+    max-width: $global-width;
+    margin: 0 auto;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: $content-width;
+    margin: 0 auto;
+}
+
+.wrapper-donational {
+    width: 100%;
+    max-width: $donation-width;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.wrapper-po {
+    padding-top: 40px;
+    width: 100%;
+    max-width: $content-width;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: $tablet-width) {
+    .wrapper-po {
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width: $mobile-small-width) {
+    .wrapper-po {
+        padding-top: 30px;
+    }
+}

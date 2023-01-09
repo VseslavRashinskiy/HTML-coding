@@ -1,0 +1,133 @@
+.button {
+    font-family: 'Georgia', Garamond, serif;
+    padding: 15px 45px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    cursor: pointer;
+}
+
+.button_colored {
+    background: $color-primary;
+    border: none;
+    border-radius: 100px;
+    color: $color-text-button;
+    width: 100%;
+    max-width: 261px;
+    letter-spacing: 0.058em;
+}
+
+.button_colored:hover{
+    background-color: $color-bacgroun-border;
+    border-color: $color-bacgroun-border;
+}
+
+.button-border:hover {
+    background-color: $color-bacgroun-border;
+}
+
+.button_left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-light;
+    border: 2px solid $color-primary;
+    border-radius: 100%;
+    width: 100%;
+    max-width: 52px;
+    height: 52px;
+    cursor: pointer;
+}
+
+.button_right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-light;
+    border: 2px solid $color-primary;
+    border-radius: 100%;
+    width: 100%;
+    max-width: 52px;
+    height: 52px;
+    cursor: pointer;
+}
+
+.button_left:hover {
+    background-color: $color-bacgroun-border;
+}
+
+.button_right:hover {
+    background-color: $color-bacgroun-border;
+}
+
+.scroll {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 340px;
+    height: 52px;
+}
+
+.button-pets-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-light;
+    border: 2px solid $color-header-link;
+    border-radius: 100%;
+    width: 52px;
+    height: 52px;
+    cursor: pointer;
+}
+
+.button-midle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-primary;
+    border: 2px solid $color-primary;
+    border-radius: 100%;
+    width: 52px;
+    height: 52px;
+    cursor: pointer;
+}
+
+.button-pets-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-light;
+    border: 2px solid $color-primary;
+    border-radius: 100%;
+    width: 52px;
+    height: 52px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: $tablet-width) {
+    .scroll {
+        left: 184px;
+    }
+}
+
+@media screen and (max-width: $mobile-small-width) {
+    .scroll {
+        width: 300px;
+        left: 0;
+    }
+
+    .button_left {
+        position: absolute;
+        left: 43px;
+        bottom: 0;
+        margin: 0;
+    }
+
+    .button_right {
+        position: absolute;
+        right: 43px;
+        bottom: 0;
+        margin: 0;
+    }
+}

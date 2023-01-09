@@ -1,0 +1,106 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    font-size: 1.6rem;
+    font-family: 'Arial', Helvetica, sans-serif;
+}
+
+ul {
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Georgia', Garamond, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 110%;
+    color:$color-primary;
+    margin: 0;
+    letter-spacing: 0.054em;
+    width: 100%;
+    max-width: 184px;
+}
+
+.logo-pets {
+    color: $color-tex;
+}
+
+h2 {
+    font-family: 'Georgia', Garamond, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 130%;
+    color: $color-light;
+    margin: 0;
+    width: 100%;
+    max-width: 310px;
+    height: 100%;
+    max-height: 114px;
+}
+
+ h3 {
+    font-family: 'Georgia', Garamond, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    color: $color-tex;
+    letter-spacing: 0.06em;
+}
+
+.first-section {
+    height: 908px;
+    background-image: url("../../assets/fonts/start-screen-gradient-background.png"), url("/assets/fonts/start-screen-background.png");
+    background-repeat: no-repeat;
+}
+#footer {
+    background-image: url("/assets/fonts/footer-background.png");
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none; 
+    color: $color-header-link;
+    list-style: none;
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 160%;
+}
+
+@media screen and (max-width: $tablet-width) {
+    .first-section {
+        height: 1165px;
+        background-size: cover;
+    }
+    
+    #footer {
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: $mobile-small-width) {
+    .first-section {
+        height: 823px;
+        background-size: cover;
+    }
+
+    h2 {
+        width: 300px;
+        height: 64px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    #footer {
+        background-size: cover;
+    }
+}
