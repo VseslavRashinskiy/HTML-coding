@@ -1,0 +1,93 @@
+.header-pets {
+    height: 120px;
+    padding-top: 30px;
+    padding-left: 40px;
+}
+
+.header-pets_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.logo-text-pets {
+    color: $color-text-button;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    margin: 10px 0 0 4px;
+}
+
+.navigation__pets {
+    color: $color-tex;
+    list-style: none;
+    cursor: pointer;
+}
+
+.navigation__pets-hover {
+    color: $color-text-button;
+    list-style: none;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 160%;
+}
+
+@media screen and (max-width: $tablet-width) {
+    .header-pets {
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header__burger-pets{
+        display: block;
+        width: 40px;
+        height: 40px;
+        position: relative;
+        z-index: 3;
+    }
+
+    .header__burger-pets.active{
+        position: fixed;
+        transform: translateX(1600%);
+    }
+
+    .header__burger-pets span {
+        width: 30px;
+        height: 2px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-color: $color-text-button;
+        transition: all 0.5s;
+    }
+
+    .header__burger-pets span:nth-of-type(2){
+        top: calc(50% - 10px);
+    }
+
+    .header__burger-pets span:nth-of-type(3){
+        top: calc(50% + 10px);
+    }
+
+    .header__burger-pets.active span:first-of-type {
+        transform: translate(-50%, -50%) rotate(89deg);
+        top: calc(50% + 2px);
+    }
+
+    .header__burger-pets.active span:nth-of-type(2){
+        transform: translate(-50%, -50%) rotate(89deg);
+        top: calc(50% + 2px);
+        left: calc(70% + 2px);
+    }
+
+    .header__burger-pets.active span:nth-of-type(3){
+        transform: translate(-50%, -50%) rotate(89deg);
+        top: calc(50% + 2px);
+        left: calc(96% + 2px);
+    }
+
+}

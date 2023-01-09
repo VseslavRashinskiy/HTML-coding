@@ -1,0 +1,143 @@
+.donation {
+    background-color: $color-bacgroun-pets;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 462px;
+}
+
+.layout-2-colomn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 282px;
+    width: 100%;
+    max-width: 915px;
+}
+
+.donation-img {
+    height: 261px;
+    width: 100%;
+    max-width: 505px;
+}
+
+.donation_information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 380px;
+    height: 282px;
+}
+
+.donation-header {
+    width: 100%;
+    max-width: 300px;
+    height: 90px;
+    margin: 0;
+}
+
+.donation-name {
+    width: 100%;
+    max-width: 308px;
+    height: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    color: $color-tex;
+    margin: 0;
+    letter-spacing: 0.06em;
+}
+
+.button_donation {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: $color-primary;
+    border: none;
+    border-radius: 9px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: $color-tex;
+    width: 100%;
+    max-width: 349px;
+    height: 43px;
+}
+
+.note {
+    width: 100%;
+    max-width: 380px;
+    height: 72px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: $color-dark-m;
+    margin: 0;
+}
+
+@media screen and (max-width: $tablet-width) {
+    .donation {
+        height: 783px;
+    }
+    .layout-2-colomn {
+        flex-direction: column-reverse;
+        height: 603px;
+
+    }
+}
+
+@media screen and (max-width: $mobile-small-width) {
+    .donation {
+        height: 542.2px;
+    }
+
+    .layout-2-colomn{
+        height: 458.2px;
+    }
+
+    .donation-img {
+        width: 100%;
+        max-width: 260px;
+        height: 135.2px;
+    }
+
+    .donation_information {
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 300px;
+        height: 281px;
+    }
+
+    .donation-header {
+        height: 64px;
+        text-align: center;
+    }
+
+    .donation-name {
+        width: 273px;
+        height: 24px;
+        line-height: 160%;
+        letter-spacing: 0;
+    }
+
+    .button_donation {
+        width: 100%;
+        max-width: 281px;
+        font-size: 15px;
+    }
+
+    .note {
+        width: 100%;
+        max-width: 280px;
+        height: 90px;
+        text-align: justify;
+    }
+}
